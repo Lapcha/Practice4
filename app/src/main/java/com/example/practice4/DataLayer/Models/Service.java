@@ -1,9 +1,9 @@
-package com.example.practice4;
+package com.example.practice4.DataLayer.Models;
 
-public class Vegetable {
+public class Service {
     private String name;
 
-    public Vegetable(String name){
+    public Service(String name){
         this.name = name;
     }
 

@@ -1,43 +1,44 @@
-package com.example.practice4;
+package com.example.practice4.UILayer.Adapters;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.practice4.DataLayer.Models.Service;
+import com.example.practice4.R;
+import com.example.practice4.SelectedItem;
 
 import java.util.List;
 
-public class AdapterRecyclerView extends
-        RecyclerView.Adapter<AdapterRecyclerView.ViewHolder>{
+public class AdapterListServices extends
+        RecyclerView.Adapter<AdapterListServices.ViewHolder>{
     private final LayoutInflater inflater;
-    private final List<Fruit> items;
+    private final List<Service> items;
     private SelectedItem selectedItemListener;
 
-    AdapterRecyclerView(Context context, List<Fruit> items, SelectedItem selectedItemListener) {
+    public AdapterListServices(Context context, List<Service> items, SelectedItem selectedItemListener) {
         this.items = items;
         this.inflater = LayoutInflater.from(context);
         this.selectedItemListener = selectedItemListener;
     }
 
     @Override
-    public AdapterRecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public AdapterListServices.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.item, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void
-    onBindViewHolder(AdapterRecyclerView.ViewHolder holder, int position) {
-        Fruit item = items.get(position);
+    onBindViewHolder(AdapterListServices.ViewHolder holder, int position) {
+        Service item = items.get(position);
         holder.textView.setText(item.getName());
-        holder.imageView.setImageResource(R.drawable.apple);
+        holder.imageView.setImageResource(R.drawable.hair_cut);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,4 +61,3 @@ public class AdapterRecyclerView extends
         }
     }
 }
-

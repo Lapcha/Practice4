@@ -1,12 +1,10 @@
-package com.example.practice4;
+package com.example.practice4.DataLayer.Models;
 
-public class Fruit {
+public class Master {
     private String name;
-
-    public Fruit(String name){
+    public Master(String name){
         this.name = name;
     }
-
     public String getName() {
         return name;
     }

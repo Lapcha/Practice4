@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Practice4</string>
-    <string name="fragmentFirstTextViewLabel">Магазин продуктов</string>
-    <string name="FragmentFirstButtonToSecondFragment">Перейти в каталог овощей</string>
-    <string name="FragmentFirstButtonToThirdFragment">Перейти в каталог фруктов</string>
+    <string name="textViewLabel">Запись в салон красоты</string>
+    <string name="textViewToMasterFragment">Выбрать специалиста</string>
+    <string name="textViewToServiceFragment">Выбрать услугу</string>
+    <string name="buttonRecordVisit">Записаться</string>
+    <string name="textViewYourVisit">Ваша запись</string>
+    <string name="buttonBack">Назад</string>
+    <string name="buttonSelect">Выбрать</string>
+    <string name="labelAboutMaster">О специалисте</string>
 </resources>

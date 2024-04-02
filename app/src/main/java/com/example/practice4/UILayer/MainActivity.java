@@ -1,8 +1,10 @@
-package com.example.practice4;
+package com.example.practice4.UILayer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.practice4.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,11 +12,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .setReorderingAllowed(true)
-                    .add(R.id.mainContainer, FirstFragment.class, null)
-                    .commit();
-        }
     }
 }
